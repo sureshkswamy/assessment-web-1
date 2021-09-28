@@ -57,11 +57,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
-          <configuration>
+        <!--  <configuration>
           	<suiteXmlFiles>
-          		<suiteXmlFile>/testng.xml</suiteXmlFile>
+          		<suiteXmlFile>/assessment-web-1/testng.xml</suiteXmlFile>
           	</suiteXmlFiles>
-          </configuration>
+          </configuration> -->
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
