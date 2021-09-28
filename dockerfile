@@ -1,0 +1,4 @@
+FROM maven:3.6-jdk-8-slim
+WORKDIR /project
+COPY src /project/src
+COPY pom.xml /project
