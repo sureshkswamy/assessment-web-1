@@ -2,6 +2,7 @@ FROM maven:3.6-jdk-8-slim
 
 VOLUME results:/test-output/
 
+RUN mkdir -p /downloads
 RUN mkdir -p /web-assessment
 WORKDIR /web-assessment
 

@@ -242,7 +242,7 @@ public class TC_01_ExploreTab extends TestBase {
 				driver.findElement(By.xpath("//span[contains(text(),'Confirm')]")).click();
 				
 				// file download assertion
-				Assert.assertTrue(CommonUtils.isFileDownloaded("C:\\Users\\Suresh\\Downloads\\", "query_export"), "Failed to download qurey result");
+				Assert.assertTrue(CommonUtils.isFileDownloaded("/downloads/", "query_export"), "Failed to download qurey result");
 			
 			System.out.println("END - Export Result #########################");
 			
@@ -300,20 +300,6 @@ public class TC_01_ExploreTab extends TestBase {
 				boolean exStatus = driver.findElement(By.xpath("(//span[@class='ant-select-selection-item'])[2]")).isDisplayed();
 				Assert.assertEquals(true, exStatus);
 		}
-		
-		
-//		@AfterMethod
-//		public void tearDown() {
-//			
-//			// logout and validate
-//			driver.findElement(By.xpath("//span[@class='antd-pro-components-global-header-index-name' and text()='test']")).click();
-//			driver.findElement(By.xpath("//span[text()='Logout']")).click();
-//			boolean lStatus = driver.findElement(By.xpath("//span[@class='antd-pro-layouts-user-layout-title' and text()='Lucidum']")).isDisplayed();
-//			Assert.assertTrue(lStatus);
-//			
-//			driver.quit();
-//		}
-//	}
 	
 		@AfterMethod
 		public void tearDown() {

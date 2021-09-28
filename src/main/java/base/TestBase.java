@@ -26,6 +26,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			System.out.println("The browser property is: " + tProperties);
+			System.out.println("user dir :: " + System.getProperty("user.dir"));
 //			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/config/config.properties"
 //					+ browserProperties); 
 			
